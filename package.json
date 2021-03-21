@@ -1,0 +1,53 @@
+{
+  "name": "vue-todo",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Мавлин Дм.",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "build2": "vue-cli-service build --verbose",
+    "fix": "npm run lint && npm run prettier:fix && npm run stylelint:fix",
+    "lint": "vue-cli-service lint",
+    "prettier:check": "prettier -c .",
+    "prettier:fix": "prettier -w .",
+    "serve": "vue-cli-service serve",
+    "stylelint:check": "stylelint -f verbose **/*.{vue,scss,css}",
+    "stylelint:fix": "stylelint **/*.{vue,scss,css} --fix"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^10.4.2",
+    "node-sass": "^4.12.0",
+    "prettier": "2.1.2",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.2",
+    "simple-progress-webpack-plugin": "^1.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
+    "stylelint-webpack-plugin": "^2.1.1",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

@@ -1,0 +1,55 @@
+@import url('~@/assets/fonts/fontello/css/fontello.css');
+@import 'assets/style/dev';
+@import '~bootstrap';
+
+$color: #2c3e50;
+$bg-color: #42b983;
+$txt-color: #c7d2ce;
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: $color;
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+}
+
+nav {
+  grid-auto-flow: column;
+  display: grid;
+  place-content: center center;
+  place-items: center;
+
+  a {
+    font-weight: bold;
+    color: $txt-color;
+    text-decoration: none;
+    min-width: 5rem;
+    padding: 20px 40px;
+    background-color: $color;
+
+    span {
+      padding-bottom: 3px;
+      transition: all 0.2s;
+      border: solid currentColor;
+      border-width: 0 0 2px;
+    }
+
+    &:hover,
+    &.router-link-exact-active {
+      transition: all 0.2s;
+      background-color: #0b2c44;
+
+      span {
+        transition: all 0.2s;
+        border-color: transparent;
+      }
+    }
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
